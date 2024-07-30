@@ -170,7 +170,7 @@ def process_rows(driver, sheet, row_count, download_path):
                 process_report(driver, sheet, k, 'Daily', log_file_path, destination_dir, folder_structure, download_path)
 
             # Weekly Reports
-            if weekly == 'Yes' and current_weekday == 1:  # 0 is Monday
+            if weekly == 'Yes' and current_weekday == 0:  # 0 is Monday
                 print("Processing Weekly Report")
                 process_report(driver, sheet, k, 'Weekly', log_file_path, destination_dir, folder_structure, download_path)
 
